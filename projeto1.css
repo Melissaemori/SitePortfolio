@@ -1,0 +1,31 @@
+.galeria{
+    margin: 2rem;
+    height: 25em;
+    gap: 0.5em;
+    display: flex;
+}
+
+
+.galeria div{
+    flex: 1;
+    background-size: cover;
+    background-position: center top;
+    transition: all 1s cubic-bezier(.5,.52,.34,.34);
+}
+
+
+.galeria div:hover{
+    flex: 5;
+    /* Proporção de 5 imagens */
+}
+
+
+.galeria:hover div:not(:hover){
+    filter: grayscale(100);
+    filter: blur(5px);
+}
+
+
+body{
+    /* cursor: url("./img/11zon_M.cur"), auto; */
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somador</title>
+ 
+    <style>
+        body{
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg #b34848 #554848);
+        }
+        .container{
+            background-color: #362f2f5b;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 22px #53282f81;
+            text-align: center;
+        }
+        h1{
+            font-size: 18px;
+            margin: 0 0 12px;
+        }
+        .campo{
+            display: flex;
+            gap: 8px;
+            margin: 12px 0;
+        }
+        input[type="nuber"]{
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #4b242b8a;
+            border-radius: 8px;
+            outline: none;
+            font-size: 16px;
+        }
+        button{
+            width: 100%;
+            padding: 10px;
+            border: 0;
+            border-radius: 8px;
+            background: #2517dd;
+            color: #f1efef;
+            font-weight: 600;
+            cursor: pointer;
+        }
+ 
+        .resultado{
+            margin: 12px;
+            font-size: 18px;
+            font-weight: 700;
+            color: black;
+        }
+ 
+        .erro{
+            color: #d80d0d;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 12px;
+        }
+ 
+    </style>
+ 
+</head>
+<body>
+    <div class="container">
+        <h1>Somador Rápido</h1>
+        <div class="campo">
+ 
+            <input type="number" name="" id="valor1"
+            class="input-valor" placeholder="Primeiro Valor"
+            step="any">
+ 
+            <input type="number" name="" id="valor2"
+            class="input-valor" placeholder="Segundo Valor"
+            step="any">
+        </div>
+            <button id="btnSomar">Somar</button>
+        <div id="mensagem" class="erro"> </div>
+        <div id="resultado" class="resultado"> </div>
+    </div>
+   
+    <!-- JavaScript -->
+    <script>
+ 
+        function valido(n) {
+            return n !== '' && !Number.isNaN(Number(n));
+        }
+ 
+ 
+        function somar(){
+            const v1 = window.document.getElementById('valor1').value.trim();
+            const v2 = window.document.getElementById('valor2').value.trim();
+ 
+            const msgEl = document.getElementById('menssagem');
+            const resEl = document.getElementById('resultado');
+ 
+            msgEl.textContent ='';
+            resEl.textContent ='';
+ 
+            if (!valido(v1) || !valido(v2)){
+                msgEl.textContent = 'Preencha os dois campos com números válidos.';
+                return;
+ 
+            }
+ 
+            const n1 = parseFloat(v1);
+            const n2 = parseFloat(v2);
+            const soma = n1 + n2;
+            resEl.textContent = 'Resultado: ' + soma.toString();
+        }
+ 
+        document.getElementById('btnSomar').addEventListener
+        ('click', somar);
+        document.querySelectorAll('.input-valor').forEach(input => {
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') somar();
+ 
+            });
+        });
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    </script>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</body>
+</html>

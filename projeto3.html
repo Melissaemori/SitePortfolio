@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link rel="stylesheet" href="projeto3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligência Artificial</title>
+</head>
+
+<body>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+
+    <header>
+        <h1>Inteligência Artificial</h1>
+        <button id="toggle-mode" class="botao-tema">
+            <span class="icone-sol"> ☀️ </span>
+            <span class="icone-lua"> 🌑 </span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>O Futuro que Já Chegou</h1>
+            <p>A Inteligência Artificial deixou de ser ficção científica e virou ferramenta essencial no dia a dia, da
+                indústria ao entretenimento.</p>
+        </section>
+
+        <section class="secao">
+            <h2>O que é Inteligência Artificial?</h2>
+            <p>IA é a capacidade de máquinas realizarem tarefas que normalmente exigem inteligência humana: identificar
+                padrões, aprender, tomar decisões e até criar conteúdos. Hoje ela está presente em assistentes virtuais,
+                sistemas de recomendação, carros autônomos e muito mais.</p>
+        </section>
+
+        <section class="secao">
+            <h2>IA Generativa</h2>
+            <p>A modalidade que mais ganhou destaque nos últimos anos é a IA generativa — modelos capazes de produzir
+                textos, imagens, vídeos e códigos. São ferramentas que aprendem com enormes bases de dados e conseguem
+                transformar instruções simples em resultados complexos.</p>
+        </section>
+
+        <section class="secao">
+            <h2>Impacto no Mundo Profissional</h2>
+            <p>Do design ao marketing, passando pela medicina e educação, a IA ampliou a produtividade e abriu portas
+                para novos modelos de trabalho. Ela não substitui o humano, mas potencializa nossa capacidade criativa e
+                analítica.</p>
+        </section>
+
+        <section class="secao">
+            <h2>Tabela - Evolução da IA</h2>
+            <p>Um resumo da evolução da IA ao logo das décadas.</p>
+            <div class="tabela-container">
+                <table class="tabela-ia">
+                    <thead>
+                        <tr>
+                            <!-- "tr" é começar uma nova linha na tabela -->
+                            <th>Décadas</th>
+                            <!-- "th" é coluna da tabela -->
+                            <th>Marco Importante</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1950</td>
+                            <td>Teste de Turing</td>
+                            <td>Medida proposta para avaliar se uma máquina consegue imitar o pensamento humano</td>
+                            <!-- 'td' é o mesmo que 'th'; descrição da coluna -->
+                        </tr>
+
+
+                        <tr>
+                            <td>1997</td>
+                            <td>Deep Blue</td>
+                            <td>Computador da IBM derrota o campeão mundial de xadrez Garry Kasparov</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>2012</td>
+                            <td>Deep Learning</td>
+                            <td>Redes neurais profundas disparam avanços em visão computacional</td>
+                        </tr>
+
+                        <tr>
+                            <td>2022+</td>
+                            <td>IA Generativa</td>
+                            <td>Modelos criam textos, imagens e vídeos com naturalidade impressionante.</td>
+                        </tr>
+                    </tbody>
+
+
+
+                </table>
+            </div>
+        </section>
+    </main>
+    <script>
+        const toggleBtn = document.getElementById('toggle-mode');
+        // "cons(constante) = não muda"
+        // togglebtn = nome criado pode ser qualquer um
+        // getElementById aqui estamos puxando o ID do botão toggle mode
+        const body = document.body;
+        // Estamos guardando dentro da cost o BODY
+        toggleBtn.addEventListener("click", function () {
+            body.classList.toggle("dark-mode");
+        });
+    </script>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+</body>
+
+</html>

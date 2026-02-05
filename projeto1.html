@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="./img/M.png" type="image/x-icon">
+    <link rel="stylesheet" href="projeto1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 1</title>
+
+    
+    <style>
+      .carousel-caption p{
+        font-size: 30px;
+        color: blue;
+        background-color: black;
+      }
+    </style>
+</head>
+<body>
+  <!-- "!" para criar essa base de cima -->  
+<!-- ------------------------------NAVEGAÇÃO----------------------------------------->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">PROJETO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Galeria</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tutoriais
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">HTML</a></li>
+            <li><a class="dropdown-item" href="#">CSS</a></li>
+            <li><a class="dropdown-item" href="#">JavaScript</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ------------------------------NAVEGAÇÃO------------------------------------>
+
+
+
+<!-- ------------------------------CARROSSEL------------------------------------>
+
+
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+ <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="https://cdn.pixabay.com/photo/2018/05/03/06/19/jaguar-3370498_1280.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      <h2 style="font-size: 50px; color: aqua; background-color: #bf00ff;"> A onça pintada</h2>
+      <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+
+
+    <div class="carousel-item">
+      <img src="https://cdn.pixabay.com/photo/2024/10/23/18/54/squirrel-monkeys-9143848_1280.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+
+
+    <div class="carousel-item">
+      <img src="https://cdn.pixabay.com/photo/2014/04/09/10/31/macaw-320006_1280.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+
+
+    <div class="carousel-item">
+      <img src="https://cdn.pixabay.com/photo/2014/07/08/12/40/fish-386747_1280.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+     </div>
+
+
+    <div class="carousel-item">
+      <img src="https://cdn.pixabay.com/photo/2016/12/03/15/11/sloth-1879999_1280.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- -----------------------------------CARROSSEL------------------------------------>
+
+
+
+
+
+<!-- -----------------------------------GALERIA------------------------------------->
+
+<div class="galeria">
+  <div style="background-image: url(https://cdn.pixabay.com/photo/2020/07/15/06/23/amazonie-5406522_960_720.jpg);"></div>
+  <div style="background-image: url(https://cdn.pixabay.com/photo/2022/08/22/10/03/panda-7403298_1280.jpg);"></div>
+  <div style="background-image: url(https://cdn.pixabay.com/photo/2016/04/20/12/33/anaconda-1341077_1280.jpg);"></div>
+  <div style="background-image: url(https://cdn.pixabay.com/photo/2025/09/21/08/05/victoria-amazonica-9845979_1280.jpg);"></div>
+  <div style="background-image: url(https://cdn.pixabay.com/photo/2023/03/17/12/03/roe-deer-7858518_960_720.jpg);"></div>
+  <div style="background-image: url(https://cdn.pixabay.com/photo/2023/03/17/12/03/roe-deer-7858518_960_720.jpg);"></div>
+  <div style="background-image: url(https://cdn.pixabay.com/photo/2023/03/17/12/03/roe-deer-7858518_960_720.jpg);"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- -----------------------------------GALERIA------------------------------------->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

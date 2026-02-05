@@ -1,0 +1,210 @@
+:root{
+    --cor-fundo: pink;
+    --cor-texto: blue;
+    --cor-destaque: yellow;
+    --cor-bloco: white;
+}
+
+body.dark-mode{
+    --cor-fundo: #0e0f10;
+    --cor-texto: #e7e7e7;
+    --cor-destaque: #7d9bff;
+    --cor-bloco: #0e0f10;
+}
+
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background: var(--cor-bloco); */
+    background-image: url(https://cdn.pixabay.com/photo/2016/12/30/00/36/grasses-1939673_1280.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--cor-texto);
+    transition: background .3s ease, color .3s ease;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background: lightcoral;
+    backdrop-filter: blur(10px);
+    /* Filtro de fundo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    box-shadow: 0 2px 8px black;
+}
+
+#toggle-mode{
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    border: 1px solid black;
+    background: var(--cor-bloco);
+    font-weight: 600;
+    transition: background .3s ease;
+}
+
+
+main{
+    padding:  100px 2rem 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.secao{
+    margin: 2rem 0;
+    padding: 2rem;
+    background: var(--cor-fundo);
+    border-radius: 14px;
+    box-shadow: 0 4px 12px burlywood;
+    transition: background .3s ease;
+}
+
+
+h2{
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: var(--cor-texto);
+}
+p{
+    line-height: 1.5;
+    font-size: 1.05rem;
+}
+.hero{
+    padding: 4rem 2rem;
+    text-align: center;
+    background: linear-gradient(140deg, var(--cor-fundo), #6969d2);
+    color: var(--cor-fundo);
+    border-radius: 18px;
+    margin-bottom: 2rem;
+}
+
+
+.hero h1{
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+}
+
+
+.hero p{
+    max-width: 650px;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+
+.tabela-container{
+    margin-top: 1.5rem;
+    overflow-x: auto;
+}
+
+
+.tabela-ia{
+    width: 100%;
+    /* border: 1px solid black; */
+    font-size: 1rem;
+    min-width: 600px;
+    overflow: hidden;
+    border-collapse: collapse;
+    /* Tira o espaçamento das bordas da tabela */
+}
+
+
+.tabela-ia thead{
+    background: var(--cor-destaque);
+    color: #6969d2;
+    /* border: 1px solid black; */
+}
+
+
+.tabela-ia th, 
+.tabela-ia td{
+    /* border: 1px solid black; */
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid green;
+}
+
+
+.tabela-ia tbody tr:hover{
+    background: #fa807279;
+    transform: translateX(2px);
+}
+
+
+.tabela-ia tbody tr{
+    transition: background .25s ease, transform .15s ease;
+    /* Existe um "0" antes do .20s */
+}
+
+
+.botao-tema{
+    position: relative;
+    width: 55px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: grey;
+    border: 1px solid #0000008f;
+    overflow: hidden;
+    transition: background .3s ease;
+}
+
+
+.botao-tema span{
+    position: absolute;
+    font-size: 1.2rem;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+.icone-sol{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.icone-lua{
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+
+body.dark-mode .icone-sol{
+    opacity: 0;
+    transform: translateY(-10);
+}
+
+body.dark-mode .icone-lua{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+body.dark-mode header{
+    background: #0e0f10;
+}
+
+body.dark-mode .tabela-ia td{
+    border-bottom: 1px solid blue;
+}
+
+body.dark-mode .tabela-ia tbody tr:hover{
+    background: blue;
+}
+
+
+body.dark-mode{
+    background-image: url(https://cdn.pixabay.com/photo/2022/12/10/11/05/snow-7646952_1280.jpg);
+}
+
+
+
